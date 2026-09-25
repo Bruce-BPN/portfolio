@@ -4,6 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
     
     // Default language is French
     let currentLang = 'fr';
+    setLanguage(currentLang);
 
     function setLanguage(lang) {
         currentLang = lang;

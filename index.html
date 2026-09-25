@@ -1,203 +1,41 @@
 <!DOCTYPE html>
-<html lang="fr" data-lang="fr">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Professional Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Bruce Pourny - Portfolio</title>
+    <link rel="icon" href="images/favicon.jpg" type="image/x-icon">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f9;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #333;
+        }
+        .container {
+            text-align: center;
+            padding: 2rem;
+        }
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: #2c3e50;
+        }
+        p {
+            font-size: 1.2rem;
+            color: #7f8c8d;
+        }
+    </style>
 </head>
 <body>
-    <!-- Header / Navbar -->
-    <header>
-        <nav class="navbar">
-            <div class="logo">
-                <span data-en="Portfolio" data-fr="Portfolio">Portfolio</span>
-            </div>
-            <ul class="nav-links">
-                <li><a href="#about" data-en="About" data-fr="À propos">About</a></li>
-                <li><a href="#skills" data-en="Skills" data-fr="Compétences">Skills</a></li>
-                <li><a href="#projects" data-en="Projects" data-fr="Projets">Projects</a></li>
-                <li><a href="#contact" data-en="Contact" data-fr="Contact">Contact</a></li>
-            </ul>
-            <div class="lang-switch">
-                <button id="lang-btn" class="lang-toggle-btn">
-                    <i class="fas fa-globe"></i> <span id="lang-text">FR</span>
-                </button>
-            </div>
-        </nav>
-    </header>
-
-    <!-- Hero Section -->
-    <section id="hero" class="hero">
-        <div class="hero-content">
-            <h1 data-en="Hello, I'm <span class='highlight'>Your Name</span>" data-fr="Bonjour, je suis <span class='highlight'>Votre Nom</span>">Hello, I'm <span class="highlight">Your Name</span></h1>
-            <p data-en="Professional Software Engineer & Problem Solver" data-fr="Ingénieur Logiciel & Résolveur de Problèmes">Professional Software Engineer & Problem Solver</p>
-            <div class="hero-btns">
-                <a href="#projects" class="btn primary-btn" data-en="View Projects" data-fr="Voir les Projets">View Projects</a>
-                <a href="#contact" class="btn secondary-btn" data-en="Get in Touch" data-fr="Me Contacter">Get in Touch</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about" class="section">
-        <div class="container">
-            <h2 class="section-title" data-en="About Me" data-fr="À propos de moi">About Me</h2>
-            <div class="about-grid">
-                <div class="about-text">
-                    <p data-en="I am a passionate professional dedicated to building robust, scalable applications and delivering exceptional digital experiences. With a strong foundation in modern technologies, I continuously strive to learn and adapt to new challenges." data-fr="Je suis un professionnel passionné, dédié à la création d'applications robustes et évolutives ainsi qu'à la fourniture d'expériences numériques exceptionnelles. Fort d'une solide base dans les technologies modernes, je m'efforce continuellement d'apprendre et de m'adapter à de nouveaux défis.">
-                        I am a passionate professional dedicated to building robust, scalable applications and delivering exceptional digital experiences. With a strong foundation in modern technologies, I continuously strive to learn and adapt to new challenges.
-                    </p>
-                    <p data-en="Whether working independently or collaborating within a cross-functional team, I focus on clean code, user-centric design, and measurable results." data-fr="Qu'il s'agisse de travailler en autonomie ou de collaborer au sein d'une équipe pluridisciplinaire, je privilégie un code propre, une conception centrée sur l'utilisateur et des résultats mesurables.">
-                        Whether working independently or collaborating within a cross-functional team, I focus on clean code, user-centric design, and measurable results.
-                    </p>
-                </div>
-                <div class="about-stats">
-                    <div class="stat-card">
-                        <h3>5+</h3>
-                        <p data-en="Years Experience" data-fr="Années d'Expérience">Years Experience</p>
-                    </div>
-                    <div class="stat-card">
-                        <h3>50+</h3>
-                        <p data-en="Projects Completed" data-fr="Projets Réalisés">Projects Completed</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Skills Section -->
-    <section id="skills" class="section bg-light">
-        <div class="container">
-            <h2 class="section-title" data-en="Professional Skills" data-fr="Compétences Professionnelles">Professional Skills</h2>
-            <div class="skills-grid">
-                <div class="skill-category">
-                    <h3 data-en="Frontend Development" data-fr="Développement Frontend"><i class="fas fa-code"></i> Frontend Development</h3>
-                    <ul class="skill-list">
-                        <li>HTML5 / CSS3 / JavaScript (ES6+)</li>
-                        <li>React / Vue.js</li>
-                        <li>Responsive Design & UI/UX</li>
-                    </ul>
-                </div>
-                <div class="skill-category">
-                    <h3 data-en="Backend Development" data-fr="Développement Backend"><i class="fas fa-server"></i> Backend Development</h3>
-                    <ul class="skill-list">
-                        <li>Node.js / Express</li>
-                        <li>Python / FastAPI / Django</li>
-                        <li>RESTful APIs & GraphQL</li>
-                    </ul>
-                </div>
-                <div class="skill-category">
-                    <h3 data-en="Tools & DevOps" data-fr="Outils & DevOps"><i class="fas fa-tools"></i> Tools & DevOps</h3>
-                    <ul class="skill-list">
-                        <li>Git / GitHub / GitLab</li>
-                        <li>Docker / Containers</li>
-                        <li>CI/CD Pipelines</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section id="projects" class="section">
-        <div class="container">
-            <h2 class="section-title" data-en="Featured Projects" data-fr="Projets Phares">Featured Projects</h2>
-            <div class="projects-grid">
-                <div class="project-card">
-                    <div class="project-header">
-                        <i class="fas fa-laptop-code"></i>
-                        <div class="project-links">
-                            <a href="#" target="_blank"><i class="fab fa-github"></i></a>
-                            <a href="#" target="_blank"><i class="fas fa-external-link-alt"></i></a>
-                        </div>
-                    </div>
-                    <h3 data-en="E-Commerce Platform" data-fr="Plateforme E-Commerce">E-Commerce Platform</h3>
-                    <p data-en="A full-stack e-commerce web application with user authentication, product filtering, and secure checkout integration." data-fr="Une application web e-commerce full-stack avec authentification des utilisateurs, filtrage des produits et intégration de paiement sécurisé.">
-                        A full-stack e-commerce web application with user authentication, product filtering, and secure checkout integration.
-                    </p>
-                    <div class="project-tags">
-                        <span>React</span>
-                        <span>Node.js</span>
-                        <span>MongoDB</span>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-header">
-                        <i class="fas fa-chart-line"></i>
-                        <div class="project-links">
-                            <a href="#" target="_blank"><i class="fab fa-github"></i></a>
-                            <a href="#" target="_blank"><i class="fas fa-external-link-alt"></i></a>
-                        </div>
-                    </div>
-                    <h3 data-en="Analytics Dashboard" data-fr="Tableau de Bord Analytique">Analytics Dashboard</h3>
-                    <p data-en="Interactive dashboard providing real-time data visualization, custom report generation, and metric tracking." data-fr="Tableau de bord interactif offrant une visualisation des données en temps réel, la génération de rapports personnalisés et le suivi des métriques.">
-                        Interactive dashboard providing real-time data visualization, custom report generation, and metric tracking.
-                    </p>
-                    <div class="project-tags">
-                        <span>Vue.js</span>
-                        <span>Python</span>
-                        <span>Chart.js</span>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-header">
-                        <i class="fas fa-robot"></i>
-                        <div class="project-links">
-                            <a href="#" target="_blank"><i class="fab fa-github"></i></a>
-                            <a href="#" target="_blank"><i class="fas fa-external-link-alt"></i></a>
-                        </div>
-                    </div>
-                    <h3 data-en="AI Task Assistant" data-fr="Assistant de Tâches IA">AI Task Assistant</h3>
-                    <p data-en="Smart task management system leveraging AI APIs to automatically prioritize and categorize daily tasks." data-fr="Système intelligent de gestion des tâches exploitant des API d'IA pour prioriser et catégoriser automatiquement les tâches quotidiennes.">
-                        Smart task management system leveraging AI APIs to automatically prioritize and categorize daily tasks.
-                    </p>
-                    <div class="project-tags">
-                        <span>JavaScript</span>
-                        <span>OpenAI API</span>
-                        <span>TailwindCSS</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="section bg-light">
-        <div class="container">
-            <h2 class="section-title" data-en="Get In Touch" data-fr="Contactez-moi">Get In Touch</h2>
-            <div class="contact-content">
-                <p data-en="I am currently available for new opportunities, freelance projects, or professional networking. Feel free to reach out!" data-fr="Je suis actuellement disponible pour de nouvelles opportunités, des projets en freelance ou du networking professionnel. N'hésitez pas à me contacter !">
-                    I am currently available for new opportunities, freelance projects, or professional networking. Feel free to reach out!
-                </p>
-                <div class="contact-info">
-                    <div class="contact-item">
-                        <i class="fas fa-envelope"></i>
-                        <span>your.email@example.com</span>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <span data-en="City, Country" data-fr="Ville, Pays">City, Country</span>
-                    </div>
-                </div>
-                <form class="contact-form" onsubmit="event.preventDefault(); alert(document.documentElement.lang === 'fr' ? 'Merci pour votre message !' : 'Thank you for your message!');">
-                    <input type="text" placeholder="Name / Nom" required>
-                    <input type="email" placeholder="Email" required>
-                    <textarea rows="5" placeholder="Message..." required></textarea>
-                    <button type="submit" class="btn primary-btn" data-en="Send Message" data-fr="Envoyer le Message">Send Message</button>
-                </form>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2026 Your Name. <span data-en="All rights reserved." data-fr="Tous droits réservés.">All rights reserved.</span></p>
-    </footer>
-
-    <script src="script.js"></script>
+    <div class="container">
+        <h1>En cours de construction</h1>
+        <p>Notre site portfolio arrive bientôt. Merci de votre patience !</p>
+    </div>
 </body>
 </html>

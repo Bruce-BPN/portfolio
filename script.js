@@ -2,8 +2,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const langBtn = document.getElementById('lang-btn');
     const langText = document.getElementById('lang-text');
     
-    // Default language is English
-    let currentLang = 'en';
+    // Default language is French
+    let currentLang = 'fr';
 
     function setLanguage(lang) {
         currentLang = lang;
@@ -30,10 +30,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Toggle language on button click
     langBtn.addEventListener('click', () => {
-        if (currentLang === 'en') {
-            setLanguage('fr');
-        } else {
+        if (currentLang === 'fr') {
             setLanguage('en');
+        } else {
+            setLanguage('fr');
         }
     });
 });
